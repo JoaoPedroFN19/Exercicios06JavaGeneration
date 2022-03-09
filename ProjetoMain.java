@@ -6,6 +6,8 @@ public class ProjetoMain {
 
 	public static void main(String[] args) {
 		
+		Repeticao rep = new Repeticao();
+		
 		Instituicao ins = new Instituicao();
 		
 		Scanner leia = new Scanner(System.in);
@@ -43,12 +45,15 @@ public class ProjetoMain {
 		System.out.println("-----------------------------");
 		
 		if (idade >= 18) { 
+		
 			ins.instituicao();
+			rep.repeticao();
+			
 		}
 		else {
 			System.out.println("Menor de 18 anos não pode doar");
 		}
-		
+		System.out.println("Obrigado pela doação");
 		leia.close();
 		
 	}
